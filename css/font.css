@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'iran-yekan';
+    src: url('../assets/fonts/Yekan.woff'); format('woff');
+    font-style: normal;
+}
+
+body,button,input,optgroup,select,textarea {
+    font-family: 'iran-yekan';
+}
