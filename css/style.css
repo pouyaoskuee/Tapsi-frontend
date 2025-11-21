@@ -22,11 +22,13 @@ html{
 body {
     color: var(--color--text);
     font-size: 1.4rem;
+    line-height: 2.8rem;
 }
 
 li,ul{
     list-style: none;
 }
+
 
 h1, h2, h3, h4 {
     color: var(--color--heading);
@@ -54,13 +56,18 @@ h2{
 
 }
 
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 .btn{
     cursor: pointer;
     outline: none;
     border: none;
-    padding: 2rem 2.5rem;
+    width: 21rem;
+    height: 5rem;
     border-radius: 8px;
-    margin: 1rem 0;
     white-space: nowrap;
     text-align: center;
     font-size: 1.4rem;
@@ -74,8 +81,9 @@ h2{
 }
 
 .btn--black{
-    width: 100%;
     font-size: 1.6rem;
+    display: inline-block;
+
 }
 
 @media screen and (min-width:1024px) {
@@ -112,12 +120,13 @@ h2{
 
 .list{
     display: flex;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
+
 
 .list--vertical{
     flex-direction: column;
-    gap: 3.6rem;
+    gap: 2.5rem;
 }
 
 .list--horizontal{
@@ -142,4 +151,156 @@ h2{
     background-position: center;
 
 }
+
+.reservation{
+    display: flex;
+    flex-direction: column;
+    /*grid-template-columns: repeat(auto-fit, minmax(250px, 320px));*/
+    align-items: center;
+    gap: 5rem;
+    margin-top: 40rem;
+    margin-bottom: 20rem;
+}
+
+
+
+@media screen and (min-width:1024px) {
+    .reservation{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+.reservation__container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 31rem;
+    height: 62rem;
+    background-color: var(--color--secondary--light);
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+@media screen and (min-width:1024px) {
+    .reservation__container:hover{
+        transform: scale(1.05);
+    }
+    .reservation__container--popular:hover{
+        transform: scale(1.15);
+    }
+}
+
+.reservation__container--popular{
+    transform: scale(1.1);
+}
+
+.reservation__header{
+    position: absolute;
+    top: 0;
+    background-color: #FF7A50;
+    width: 100%;
+    height: 18.5rem;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.reservation__header--light{
+    background-color: #FFA589;
+}
+
+.reservation__header__content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    top: 4rem;
+    right: 2.2rem;
+    font-size: 1.8rem;
+    color: var(--color--white);
+
+}
+
+.reservation--badge{
+    position: absolute;
+    top: 3.3rem;
+    left: 2.9rem;
+}
+
+
+.reservation__content ul{
+    position: absolute;
+    bottom: 19rem;
+    right: 2.2rem;
+}
+
+.reservation__content button{
+    position: absolute;
+    bottom: 4rem;
+    right: 4rem;
+}
+
+@media screen and (min-width:1024px) {
+    .reservation__content button{
+        right: 3rem;
+    }
+}
+
+.services{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    padding: 0 3.5rem ;
+    margin-top: 7.5rem;
+}
+
+.services__img{
+/*justify-self: end;*/
+}
+
+.services img{
+    width: 32.5rem;
+    height: 21rem;
+    padding-right: 3rem;
+}
+
+.services__content{
+display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.6rem;
+
+}
+
+@media screen and (min-width:1024px) {
+    .services{
+        grid-template-columns: 68rem 1fr;
+        padding-right: 11rem;
+        padding-left: 5rem;
+        column-gap: 1rem;
+
+    }
+    .services__img{
+        order: 2;
+    }
+    .services__content{
+        order: 1;
+
+    }
+    .coupon__img{
+        order: 1;
+
+    }.coupon__content{
+        order: 2;
+
+    }
+}
+
+
 

@@ -2,6 +2,8 @@
     font-family: 'iran-yekan';
     src: url('../assets/fonts/Yekan.woff'); format('woff');
     font-style: normal;
+    font-weight: normal;
+
 }
 
 body,button,input,optgroup,select,textarea {
