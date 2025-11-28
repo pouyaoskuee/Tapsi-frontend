@@ -10,36 +10,70 @@
 </head>
 <body>
 
-<section class="hero container">
-    <picture class="hero-image">
-        <source media="(max-width: 1024px)" srcset="assets/images/baner-mobile.webp" type="image/webp">
-        
-        <source media="all(min-width:1024px)" srcset="/assets/images/baner.webp" type="image/webp">
-
-        <img src="/assets/images/baner.png" alt="baner">
-    </picture>
-
-    <div class="hero__container">
-        <div class="hero__container__content">
-            <h2 class="hero__title">تپسی</h2>
-            <p>اپلکنشن درخواست خودرد و پیک</p>
-        </div>
-        <div class="hero__container__buttons">
-            <button>دانلود اپلکیشن مسافران</button>
-            <button>وب اپلکیشن مسافران</button>
-            <button class="bgc-none">دانلود اپلکشین رانندگان</button>
-            <button class="bgc-none">ثبت نام رانندگان</button>
-        </div>
+<section class="tabs container">
+    <div class="tabs__content">
+        <a href="" class="tabs__tab" data-tab-target="classic">
+            <img src="/assets/images/tabs/cc-classic.png" alt="tabs">
+            <p>تپسی کلاسیک</p>
+        </a>
+        <a href="" class="tabs__tab" data-tab-target="share">
+            <img src="/assets/images/tabs/cc-wait-and-share.png" alt="tabs">
+            <p>با‌همسفر</p>
+        </a>
+        <a href="" class="tabs__tab" data-tab-target="delivery">
+            <img src="/assets/images/tabs/cc-delivery.png" alt="tabs">
+            <p>ارسال بسته</p>
+        </a>
+        <a href="" class="tabs__tab" data-tab-target="tel">
+            <img src="/assets/images/tabs/cc-tel.png" alt="tabs">
+            <p>تلفنی</p>
+        </a>
+        <a href="" class="tabs__tab" data-tab-target="plus">
+            <img src="/assets/images/tabs/cc-plus.png" alt="tabs">
+            <p>پلاس</p>
+        </a>
+        <a href="" class="tabs__tab" data-tab-target="intercity">
+            <img src="/assets/images/tabs/cc-intercity.png" alt="tabs">
+            <p>بین شهری</p>
+        </a>
 
     </div>
-
-    <div class="hero-overlay">
-        <img src="/assets/images/mockup-phone.png" alt="mockup-phone">
-    </div>
-    
-    
-    
 </section>
+
+<section class="tabs__result container">
+    <div class="tabs__result__content" id="classic">
+        <div class="services__img tabs--img">
+            <img src="/assets/images/tabs/illus-classic.png" alt="services">
+        </div>
+        <div class="services__content">
+            <h2>خدمات تپسی برای کسب کار ها</h2>
+
+            <p>نامز‌مه تساوخرد ناکما یگداس هب هک تسا بو تحت هناماس کی ،یسپت ینامزاس لنپ
+                اب و .دنک‌یم مهارف اه‌نامزاس و اهراکو‌بسک یارب ار کیپ و وردوخ یدودحمان دادعت
+                یگداس هب ار دوخ یاهالاک لاسرا و یرهش‌نورد یاه تیرومام دیناوت‌یم نآ زا هدافت .دینک تیریدم
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="tabs__result container" id="share">
+    <div class="tabs__result__content" >
+        <div class="services__img tabs--img">
+            <img src="/assets/images/tabs/illus-classic.png" alt="services">
+        </div>
+        <div class="services__content">
+            <h2>خدمات تپسی برای کسب کار ها</h2>
+
+            <p>نامز‌مه تساوخرد ناکما یگداس هب هک تسا بو تحت هناماس کی ،یسپت ینامزاس لنپ
+                اب و .دنک‌یم مهارف اه‌نامزاس و اهراکو‌بسک یارب ار کیپ و وردوخ یدودحمان دادعت
+                یگداس هب ار دوخ یاهالاک لاسرا و یرهش‌نورد یاه تیرومام دیناوت‌یم نآ زا هدافت .دینک تیریدم
+            </p>
+        </div>
+    </div>
+</section>
+
+<div class="edge-left"></div>
+<div class="edge-right"></div>
 
 
 <script src="/js/main.js"></script>
