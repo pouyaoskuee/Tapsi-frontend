@@ -812,10 +812,15 @@ footer img{
     /*s-hero*/
 
 
+.hero{
+    margin-top: 1.5rem;
+    position: relative;
+}
+
+
 .hero img{
     width: -webkit-fill-available;
     height: 49rem;
-    position: relative;
 }
 
 
@@ -830,9 +835,11 @@ footer img{
     justify-content: space-between;
     border-radius: 32px;
     position: absolute;
-    top: 35%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding-top: 2.5rem;
+
 }
 
 .hero__container button{
@@ -871,13 +878,16 @@ footer img{
 
 @media screen and (min-width: 1024px) {
     .hero__container{
-        width: 53rem;
-        height: 35rem;
-        top: 25rem;
-        right: -15rem;
-        align-items: flex-start;
-        padding-right: 2.5rem;
+        width: 50rem;
+        height: 30rem;
+        top: 26rem;
+        right: -10rem;
         padding-top: 3.5rem;
+    }
+
+    .hero__container__content{
+        align-self: flex-start;
+        padding-right: 2.5rem;
     }
 
     .hero__container__buttons{
@@ -899,20 +909,26 @@ footer img{
         display: block;
         position: absolute;
         top: 12rem;
-        left: 7.5rem;
+        left: 14rem;
     }
     .hero-overlay img{
-        width: 56rem;
-        height: 86rem;
+        width: 43rem;
+        height: 67rem;
     }
 }
 
     /*tabs*/
 
-/*.tabs{*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*}*/
+.tabs{
+    margin-top: 3rem;
+}
+
+.tabs__title{
+    align-self: flex-start;
+    margin-right: 2rem;
+    margin-bottom: 3rem;
+    font-size: 2.4rem;
+}
 
 .tabs__content{
     display: flex;
@@ -920,26 +936,53 @@ footer img{
     gap: 3rem;
     padding-right: 1rem;
     overflow: auto;
+
 }
 
 .tabs__content a{
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 .tabs__content img{
     width: 8rem;
     height: 8rem;
+
 }
 
 
 .tabs--img{
     padding-top: 4rem;
+    display: flex;
+    justify-content: center;
 }
 
 .tabs--img img{
     margin-bottom: 2rem;
+    width: 30rem;
+    height: 19rem;
+
+}
+
+.tabs__tab{
+    opacity: 0.5;
+
+}
+
+.tabs__result{
+    padding: 1rem 2rem;
+}
+
+.tabs__result__content{
+    display: none;
+}
+
+
+.active{
+    opacity: 1;
+    display: block;
 }
 
 @media screen and (min-width: 1024px) {
@@ -947,19 +990,39 @@ footer img{
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 20rem;
+
     }
+
+
+
+    .tabs__title{
+        margin-right: 13rem;
+        margin-bottom: 6rem;
+        font-size: 3.5rem;
+    }
+
     .tabs__content{
         overflow: hidden;
         gap: 10rem;
     }
 
+    .tabs__content img{
+        width: 10rem;
+        height: 10rem;
+    }
+
     .tabs__result{
-        padding: 13rem;
+        padding: 4rem 10rem;
     }
 
     .tabs__result__content{
-        display: flex;
+        display: none;
         flex-direction: row;
+    }
+
+    .active{
+        display: flex;
     }
 
     .tabs__result .services__content{
