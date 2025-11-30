@@ -7,6 +7,8 @@
     <title>tapsi</title>
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
 <header>
@@ -70,7 +72,7 @@
     </div>
 </section>
 
-<section class="tabs container">
+<section class="tabs container" data-aos="zoom-in-up">
     <h2 class="tabs__title">سرویس‌های تپسی</h2>
     <div class="tabs__content">
         <a href="" class="tabs__tab active" data-tab-target="classic">
@@ -103,10 +105,10 @@
 
 <section class="tabs__result container">
     <div class="tabs__result__content active" id="classic">
-        <div class="services__img tabs--img">
+        <div class="services__img tabs--img" data-aos="zoom-in-down">
             <img src="/assets/images/tabs/illus-classic.png" alt="services">
         </div>
-        <div class="services__content">
+        <div>
             <h2>تپسی کلاسیک</h2>
 
             <p>با سرویس تپسی کلاسیک،سریع آسان و به صرفه به مقصد برسید. در این سرویس می توانید به دو یا چند مقصد سفر کنید.</p>
@@ -172,10 +174,10 @@
 </section>
 
 <section class="services container">
-    <div class="services__img">
+    <div class="services__img" data-aos="zoom-in-up" >
         <img src="/assets/images/mac1.png" alt="services">
     </div>
-    <div class="services__content">
+    <div class="services__content" data-aos="zoom-in-up">
         <h2>خدمات تپسی برای کسب کار ها</h2>
 
         <p>نامز‌مه تساوخرد ناکما یگداس هب هک تسا بو تحت هناماس کی ،یسپت ینامزاس لنپ
@@ -200,9 +202,217 @@
     </div>
 </section>
 
+<section class="reservation container">
+    <div class="reservation__container" data-aos="fade-down">
+        <div class="reservation__header reservation__header--light">
+            <div class="badge reservation--badge badge--light">
+                <p class="badge__paragraph" dir="ltr">10% off</p>
+            </div>
+            <div class="reservation__header__content">
+                <p>title</p>
+                <p>price</p>
+                <p>description</p>
+            </div>
+        </div>
+        <div class="reservation__content">
+            <ul class="list list--vertical">
+                <li>ایتم ها</li>
+                <li>ایتم ها</li>
+                <li>ایتم ها</li>
+                <li>ایتم ها</li>
+            </ul>
+            <button class="btn btn--secondary">ورود و ثبت نام پنل سازمانی</button>
+        </div>
+    </div>
+
+
+
+    <div class="reservation__container reservation__container--popular up" data-aos="fade-up">
+        <div class="reservation__header">
+            <div class="badge reservation--badge">
+                <p class="badge__paragraph" dir="ltr">10% off</p>
+            </div>
+            <div class="reservation__header__content">
+                <p>title</p>
+                <p>price</p>
+                <p>description</p>
+            </div>
+        </div>
+        <div class="reservation__content">
+            <ul class="list list--vertical">
+                <li>ایتم ها</li>
+                <li>ایتم ها</li>
+                <li>ایتم ها</li>
+                <li>ایتم ها</li>
+            </ul>
+            <button class="btn">ورود و ثبت نام پنل سازمانی</button>
+        </div>
+    </div>
+
+
+    <div class="reservation__container" data-aos="fade-down">
+        <div class="reservation__header reservation__header--light">
+            <div class="badge reservation--badge badge--light">
+                <p class="badge__paragraph" dir="ltr">10% off</p>
+            </div>
+            <div class="reservation__header__content">
+                <p>title</p>
+                <p>price</p>
+                <p>description</p>
+            </div>
+        </div>
+        <div class="reservation__content">
+            <ul class="list list--vertical">
+                <li>ایتم ها</li>
+                <li>ایتم ها</li>
+                <li>ایتم ها</li>
+                <li>ایتم ها</li>
+            </ul>
+            <button class="btn btn--secondary">ورود و ثبت نام پنل سازمانی</button>
+        </div>
+    </div>
+</section>
+
+<section class="contact container">
+    <div class=" br contact__content">
+        <div class=" br contact__header">
+            <h2>ارتباط با ما</h2>
+            <h3>شما میتوانید نظرات و انتقادات خود را برای ما بفرستید</h3>
+        </div>
+        <div class="contact__icons">
+            <svg  class="icon">
+                <use xlink:href="assets/images/svg-sprit.svg#x"></use>
+            </svg>
+            <svg class="icon">
+                <use xlink:href="assets/images/svg-sprit.svg#facebook"></use>
+            </svg>
+            <svg class="icon">
+                <use xlink:href="assets/images/svg-sprit.svg#linkdin"></use>
+            </svg>
+        </div>
+
+        <div class="contact__map">
+            <img src="/assets/images/map.png" alt="map">
+        </div>
+
+        <div class="contact__info">
+            <div class="contact__info__container info__location" >
+                <span><svg class="icon--inline"><use xlink:href="assets/images/svg-sprit.svg#location"></use></svg></span>
+                <p>ایران-آذربیجان شرقی-تبریز-خیابان۲۱-پلاک۲۲</p>
+            </div >
+            <div class="contact__info__container info__mobile">
+                <span><svg class="icon--inline"><use xlink:href="assets/images/svg-sprit.svg#mobile"></use></svg></span>
+                <h6>+989182451234</h6>
+            </div>
+            <div class="contact__info__container info__mail">
+                <span><svg class="icon--inline--mail"><use xlink:href="assets/images/svg-sprit.svg#email"></use></svg></span>
+                <h6>info@fronthooks.ir</h6>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="contact__form">
+        <form action="" method="post">
+            <h3>نظرات شما</h3>
+            <label for="name" class="visually-hidden"></label>
+            <input id="name" type="text" placeholder="your name">
+            <label for="email" class="visually-hidden"></label>
+
+            <input id="email" type="email" placeholder="your email">
+            <label for="discreption" class="visually-hidden"></label>
+            <textarea name="" id="discreption" cols="30" rows="10" placeholder="your message"></textarea>
+            <input class="btn btn--form" type="submit" value="ثبت نظر">
+        </form>
+    </div>
+</section>
+<footer>
+    <div class="footer__container">
+        <div>
+            <h1>تپسی</h1>
+            <p>اپلکیشن درخواست تاکسی و پیک</p>
+        </div>
+        <div>
+            <h2>تپسی</h2>
+            <a href="#">وبلاگ تپسی</a>
+            <a href="#">وبلاگ تپسی</a>
+            <a href="#">وبلاگ تپسی</a>
+            <a href="#">وبلاگ تپسی</a>
+            <a href="#">وبلاگ تپسی</a>
+            <a href="#">وبلاگ تپسی</a>
+            <a href="#">وبلاگ تپسی</a>
+        </div>
+        <div>
+            <h2>مسافران</h2>
+            <a href="#">وبلاگ تپسی</a>
+            <a href="#">وبلاگ تپسی</a>
+            <a href="#">وبلاگ تپسی</a>
+            <a href="#">وبلاگ تپسی</a>
+            <a href="#">وبلاگ تپسی</a>
+        </div>
+        <div>
+            <h2>رانندگان</h2>
+            <a href="#">وبلاگ تپسی</a>
+            <a href="#">وبلاگ تپسی</a>
+            <a href="#">وبلاگ تپسی</a>
+            <a href="#">وبلاگ تپسی</a>
+            <a href="#">وبلاگ تپسی</a>
+            <a href="#">وبلاگ تپسی</a>
+        </div>
+        <div>
+            <h2>کسب کار ها</h2>
+            <a href="#">پنل سازمانی تپسی</a>
+            <a href="#">خرید کد اعتبار و تخفیف</a>
+        </div>
+
+        <div class="footer__images">
+            <img src="/assets/images/etehadiye.png" alt="etehadiye">
+            <img src="/assets/images/etemad.png" alt="etemad">
+            <img src="/assets/images/meli.png" alt="meli">
+        </div>
+
+        <div class="copy-right">
+            <p>تمامی حقوق مادی معنوی این سایت متعلق به من است</p>
+        </div>
+
+    </div>
+
+    <div class="footer__social ">
+        <p>تپسی در شبکه های اجتماعی</p>
+        <div class="footer__social footer--media">
+            <span>
+            <svg class="icon--inline">
+                <use xlink:href="/assets/images/svg-sprit.svg#instagram"></use>
+            </svg>
+        </span>
+            <span>
+            <svg class="icon--inline">
+                <use xlink:href="/assets/images/svg-sprit.svg#testing"></use>
+            </svg>
+        </span>
+            <span>
+            <svg class="icon--inline">
+                <use xlink:href="/assets/images/svg-sprit.svg#xs"></use>
+            </svg>
+        </span>
+            <span>
+            <svg class="icon--inline">
+                <use class="hi" xlink:href="/assets/images/svg-sprit.svg#youtube"></use>
+            </svg>
+        </span>
+        </div>
+    </div>
+</footer>
+
 
 
 
 <script src="/js/main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
