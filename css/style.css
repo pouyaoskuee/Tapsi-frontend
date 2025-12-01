@@ -1083,8 +1083,124 @@ display: none;
     }
 }
 
+    /*s-traveling*/
+
+.traveling{
+    display: flex;
+    flex-direction: column;
+}
+
+.traveling h2{
+    margin-bottom: 3rem;
+    margin-right: 2rem;
+}
+
+.traveling__container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    gap: 2rem;
+    overflow-x: auto;
+}
+
+.traveling__container img{
+    width: 25rem;
+    height: 16rem;
+    border-radius: 32px;
+
+}
+
+.traveling__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.traveling__content{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    background-color: white;
+    border-radius: 32px;
+    width: 20rem;
+    height: 12rem;
+    transform: translateY(-5rem);
+    box-shadow:0 80px 100px #00000029;
+
+}
+
+.traveling__information{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.traveling--badge{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 2rem;
+
+}
+.traveling__information p{
+    font-size: 1rem;
+}
+
+.traveling__like{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+}
+
+.traveling__like svg{
+    width: 2.5rem;
+    height: 3rem;
+}
+
+.like__first{
+    display: flex;
+    gap: 0.2rem;
+    font-size: 1.5rem;
+}
+
+.like__first p{
+    transform: translateY(-0.6rem);
+    color: var(--color--text);
+}
 
 
-    /*div,footer, navbar,header {*/
-    /*    border: 1px solid var(--color--primary);*/
-    /*}*/
+
+@media screen and (min-width: 1024px) {
+    .traveling h2{
+        font-size: 3rem;
+        margin-bottom: 5rem;
+        margin-right: 4rem;
+    }
+    .traveling__container img{
+        width: 32rem;
+        height: 23rem;
+        border-radius: 32px;
+        
+    }
+
+    .like__first{
+        gap: 0.2rem;
+    }
+
+    .traveling__content{
+        width: 25rem;
+    }
+}
+
+
+
+
+
+/*div,footer, navbar,header {*/
+/*    border: 1px solid var(--color--primary);*/
+/*}*/
